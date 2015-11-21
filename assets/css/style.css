@@ -1,0 +1,176 @@
+﻿
+
+@import url(http://fonts.googleapis.com/css?family=Lato); 
+
+
+body {
+   font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pad-bottom {
+    padding-bottom: 70px;
+}
+
+.text-right {
+    text-align:right;
+}
+
+.head-line {
+ margin-bottom: 20px;
+line-height: 30px;
+font-size: 25px;
+color: #737373;
+}
+
+
+/*================================
+  HEADER STYLES
+==================================*/
+
+header {
+    background-color:#48A5FF;
+    color:#fff;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+    header .logo-wrapper img {
+      max-height: 35px;
+    }
+    header .menu-links {
+        padding-top:0px;
+    }
+ header .menu-links a {
+        font-size:30px;
+        color:#fff;
+        font-weight:900;
+        margin:0px;
+       
+    }
+    header .menu-links a:hover, header .menu-links a:focus {
+         text-decoration:none;
+           -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: rotate scale(1.2);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    }
+
+   
+
+/*================================
+  HOME SECTION STYLES
+==================================*/
+
+#home {
+    background: url(../img/home.jpg) no-repeat center center; 
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;    
+}
+
+    #home .overlay {
+        padding-top: 120px;
+        background-color: rgba(36, 36, 36, 0.3);
+        min-height: 700px;
+        padding-bottom: 40px;
+    }
+     #home h1 {
+      margin-bottom: 20px;
+line-height: 40px;
+font-size: 35px;
+color: #48A5FF;
+text-transform:uppercase;
+    }
+    #home h4 {
+      margin-bottom: 30px;
+line-height: 40px;
+font-size: 20px;
+color: #D0D0D0;
+    }
+
+/*================================
+  BUTTON STYLES
+==================================*/
+.btn-custom {
+   min-height:60px;
+    border-radius:30px;
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+padding:15px 40px 15px 40px;
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+   margin:25px 5px 5px 0px;
+}
+
+.btn-one {   
+background-color: transparent;
+border:5px solid #48A5FF; 
+color:#000;       
+  
+}
+ .btn-one:hover {
+ background-color:#48A5FF;
+ color:#fff;
+ text-decoration:none;
+    }
+
+ .btn-two {   
+background-color: #48A5FF;
+border:5px solid #48A5FF; 
+color:#fff;       
+  
+}
+ .btn-two:hover {
+ background-color:transparent;
+ color:#000;
+ text-decoration:none;
+    }
+.btn-three {   
+   
+background-color:transparent;
+border:5px solid #737373; 
+color:#000;       
+  
+}
+ .btn-three:hover {
+
+ background-color:#737373;
+ color:#fff;
+ text-decoration:none;
+    }
+
+ 
+ 
+
+/*================================
+    RESPONSIVE STYLES
+ ============================  */
+
+@media (min-width: 100px) and (max-width: 498px) {
+    #email-subscribe .form-control
+{
+display:block;
+width:100%;
+}
+
+#email-subscribe .btn-subscribe
+{
+margin-top:20px;
+}
+
+}

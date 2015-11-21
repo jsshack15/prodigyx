@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  
+    <!--<link rel="icon" href="assets/img/favicon.ico" />-->
+    <title>CleanUP | Swacch Bharat</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="assets/css/ionicons.css" rel="stylesheet" />
+
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+ 
+    <link href="assets/css/style.css" rel="stylesheet" />
+     
+    <script src="assets/js/ie-10-view-port.js"></script>
+
+    <!--my css-->
+   <link rel="stylesheet" href="assets/stylize.css">
+
+</head>
+<body onload="checkuser();">
+    <!-- HEADER SECTION START-->
+   <header id="header">
+        <div class="container" >
+                <div class="row"  >
+                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 logo-wrapper">
+                         <img src="" alt="CleanUP" />
+                     </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right" >
+                          <div class="menu-links scroll-me">
+                              <button class="btn btn-primary" id="loginbtn" data-toggle="modal" data-target="#myModal" style="">LOGIN</button>
+                              <button class="btn btn-primary" id="logoutbtn" style="display: none;" onclick="logout()">LOGOUT</button>
+                          </div>
+                </div>
+                </div>
+              
+                
+            </div>
+			
+   
+   </header>
+    <!-- HEADER SECTION END-->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div id="modalcontent">
+                    <button class="btn btn-primary" onclick="login()">
+                        LogIn with Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--HOME SECTION START  -->
+    <div id="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="row scroll-me" >
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                          <h1 style="font-size:55px; color:#fff;">CleanUP</h1>
+                    <h4 style="color:#fff; font-size:22px;">
+                        My India. Clean India.<br>
+						Bring the dirt out, we will make them notice. <br>
+                        A step towards Dream India.
+
+                    </h4>
+                    <a href="#about" class="btn btn-custom btn-two" >Contribute</a>
+                    <a href="#email-subscribe" class="btn btn-custom btn-one" >Explore</a>
+                </div>
+                </div>
+              
+                
+            </div>
+        </div>
+
+    </div>
+    <!--HOME SECTION END  -->
+    
+    <!-- CORE JQUERY  SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- SCROLLING SCRIPTS PLUGIN  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS   -->
+    <script src="assets/js/custom.js"></script>
+
+    <!--my modal-->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        })
+    </script>
+
+    <!--parse-->
+    <script src="https://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+
+    <!-- fb init-->
+    <script>
+//        console.log("fbinit");
+        Parse.initialize("Habv3TSZKdzA1El2dEHDW6S0GyEu53XlUJvkTmXs", "gNoPNb3GFCYdrRCfIwpRJ72s0yeq1mcUevI7DvJM");
+
+
+        window.fbAsyncInit = function() {
+            Parse.FacebookUtils.init({
+                appId      : '1022844911110236',
+                xfbml      : true,
+                version    : 'v2.5'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+    <!-- fblogin-->
+    <script src="assets/js/login.js"></script>
+
+</body>
+</html>
